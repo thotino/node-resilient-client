@@ -160,7 +160,7 @@ describe("Bulkhead", () => {
         });
 
         const rejection =
-            await expect(waiting).rejects.toBeInstanceOf(BulkheadTimeoutError);
+            expect(waiting).rejects.toBeInstanceOf(BulkheadTimeoutError);
         await vi.advanceTimersByTimeAsync(10_000);
         await rejection;
         expect(bulkhead.getMetrics().waitingCount).toBe(0);
