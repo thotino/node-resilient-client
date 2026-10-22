@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES2025",
-        "module": "ES2025",
+        "module": "es2022",
         "moduleResolution": "node",
         "types": ["node"],
         "rootDir": "./src",
@@ -11,7 +11,11 @@
         "noEmitOnError": true,
         "verbatimModuleSyntax": true,
         "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "ignoreDeprecations": "6.0",
+        "declaration": true,
+        "sourceMap": true
     },
     "include": ["src/**/*.ts"],
     "exclude": ["src/**/*.test.ts", "src/**/__tests__/**", "dist/**/*"]

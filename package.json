@@ -3,11 +3,14 @@
     "version": "1.0.0",
     "private": true,
     "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc --project tsconfig.json",
         "prettier": "prettier --write \"src/**/*.ts\" --no-error-on-unmatched-pattern",
         "lint": "eslint .",
-        "test": "vitest run --passWithNoTests"
+        "test": "vitest run",
+        "prepare": "npm run build"
     },
     "dependencies": {
         "winston": "~3.19.0"

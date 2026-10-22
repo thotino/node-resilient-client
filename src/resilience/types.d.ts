@@ -1,3 +1,4 @@
+import { JitterStatuses } from "./constants";
 export interface ResilienceErrorInterface {
     readonly isRetryable: boolean;
     readonly isCircuitBreakerFailure: boolean;
