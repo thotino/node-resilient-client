@@ -4,4 +4,4 @@ export {
     ResilientClient
 } from "./resilience/ResilientClient";
 export * from "./resilience/constants"
-export * from "./resilience/types";
+export type * from "./resilience/types";
